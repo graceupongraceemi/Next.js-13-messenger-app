@@ -7,7 +7,7 @@ function Header() {
 
   if (session)
     return (
-      <header className='sticky top-0 z-50 bg-white flex justify-center items-center p-10 shadow-sm'>
+      <header className='sticky top-0 z-50 bg-white flex justify-between items-center p-10 shadow-sm'>
         <div className='flex space-x-2'>
           {/* user avatar or profile picture should replace below image */}
           <Image
