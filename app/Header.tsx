@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import LogoutButton from './LogoutButton';
 
 function Header() {
   const session = true;
@@ -18,10 +19,12 @@ function Header() {
           />
 
           <div>
-            <p>Logged in as:</p>
-            <p>Emi Esther S</p>
+            <p className='text-blue-400'>Logged in as:</p>
+            <p className='font-bold text-lg'>Emi Esther S</p>
           </div>
         </div>
+
+        <LogoutButton />
       </header>
     );
 
