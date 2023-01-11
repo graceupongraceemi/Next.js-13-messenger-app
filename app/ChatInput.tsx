@@ -14,6 +14,21 @@ function ChatInput() {
     const messageToSend = input;
 
     setInput('');
+
+    const id = uuid();  // To generate uuid, created an object to push up to Redis
+
+    const message = {
+      id,
+      message: messageToSend,
+      created_at: Date.now(),
+      username: 'Emi Esther'
+      profilePic: 'https://images.unsplash.com/photo-1509909756405-be0199881695?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8aGFwcHklMjBmYWNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60',
+      email: 'emi@gmail.com'
+
+    }
+
+
+
   };
 
   return (
