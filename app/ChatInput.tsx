@@ -27,6 +27,20 @@ function ChatInput() {
         'https://images.unsplash.com/photo-1509909756405-be0199881695?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8aGFwcHklMjBmYWNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60',
       email: 'emi@gmail.com'
     };
+
+    const uploadMessageToUpstash = async () => {
+      const res = await fetch('/api/addMessage', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          message
+        })
+      });
+
+      const data = await res.json();
+    };
   };
 
   return (
