@@ -40,7 +40,10 @@ function ChatInput() {
       });
 
       const data = await res.json();
+      console.log('MESSAGE ADDED >>>', data);
     };
+
+    uploadMessageToUpstash();
   };
 
   return (
