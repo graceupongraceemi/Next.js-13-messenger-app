@@ -10,7 +10,6 @@ function MessageList() {
       <p>Message</p>
       <p>Message</p>
       <p>Message</p>
-      <p>Hello</p>
     </div>
   );
 }
